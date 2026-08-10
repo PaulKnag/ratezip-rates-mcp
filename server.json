@@ -1,0 +1,14 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "com.ratezip/rates",
+  "title": "RateZip Bank Deposit and Mortgage Rates",
+  "description": "Live US savings, CD, mortgage & HELOC rates with source + timestamp on every figure.",
+  "version": "1.0.0",
+  "websiteUrl": "https://www.ratezip.com",
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://mcp.ratezip.com/mcp"
+    }
+  ]
+}
