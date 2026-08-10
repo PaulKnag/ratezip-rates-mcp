@@ -1,0 +1,6 @@
+{
+  "$schema": "https://glama.ai/mcp/schemas/server.json",
+  "maintainers": ["PaulKnag"],
+  "name": "RateZip Bank Deposit and Mortgage Rates",
+  "description": "Live US savings, CD, mortgage & HELOC rates with source + timestamp on every figure. Remote streamable HTTP at https://mcp.ratezip.com/mcp — no auth, no API key."
+}
