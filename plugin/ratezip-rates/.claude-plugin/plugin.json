@@ -1,0 +1,9 @@
+{
+  "name": "ratezip-rates",
+  "displayName": "RateZip Bank Deposit and Mortgage Rates",
+  "version": "1.0.0",
+  "description": "Live US savings, CD, mortgage and HELOC rates with source and timestamp on every figure, plus a skill that teaches Claude how to compare them without recommending a provider.",
+  "author": { "name": "Peklava LLC (RateZip)", "url": "https://www.ratezip.com" },
+  "homepage": "https://www.ratezip.com/methodology",
+  "license": "MIT"
+}

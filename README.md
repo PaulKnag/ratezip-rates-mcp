@@ -23,7 +23,7 @@ no API key**)
 
 All tools are **read-only** (`readOnlyHint: true`, `destructiveHint: false`).
 The server also ships an interactive rate-card widget resource
-(`ui://ratezip/rates-cards.html`) for Apps-SDK surfaces.
+(`ui://ratezip/rates-cards-v2.html`, MCP Apps profile) for hosts that render UI.
 
 ## Add it to your assistant
 
@@ -52,3 +52,12 @@ Try: *"What's the best high-yield savings account rate right now?"* ·
 This is the public home for the hosted service (docs + registry manifest —
 see [`server.json`](server.json)). The service implementation is operated
 privately by Peklava LLC. Questions or data issues: press@ratezip.com.
+
+## Claude plugin
+
+[`plugin/ratezip-rates`](plugin/ratezip-rates) is the plugin bundle for
+Anthropic's directory: it references the server above in `.mcp.json` and ships
+a skill that tells Claude which tool to call and how to present the result
+(top figure first, FDIC average for context, observation date and source on
+every rate, no recommendations). In Claude Code: `claude --plugin-dir
+./plugin/ratezip-rates`.

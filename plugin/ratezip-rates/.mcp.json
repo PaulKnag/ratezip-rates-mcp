@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "ratezip-rates": {
+      "type": "http",
+      "url": "https://mcp.ratezip.com/mcp"
+    }
+  }
+}
