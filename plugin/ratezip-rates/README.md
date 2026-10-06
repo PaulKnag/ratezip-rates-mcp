@@ -28,8 +28,10 @@ Example prompts:
 
 The plugin connects to RateZip's remote MCP server at
 `https://mcp.ratezip.com/mcp` (streamable HTTP, no account or credentials).
-All four tools are read-only: `get_savings_rates`, `get_cd_rates`,
-`get_mortgage_rates` and `calculate_deposit_earnings_difference`.
+All five tools are read-only: `get_savings_rates`, `get_cd_rates`,
+`get_mortgage_rates`, `calculate_deposit_earnings_difference` and
+`compare_deposit_options` (a multi-requirement deposit comparison that
+reports each published term as a match, a conflict, or unknown).
 
 ## Data
 

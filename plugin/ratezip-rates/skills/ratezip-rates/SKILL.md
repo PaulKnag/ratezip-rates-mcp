@@ -17,6 +17,7 @@ comparisons only.
 | CD rates | `get_cd_rates` with `term_months` when a term is named. Omit it for every term. |
 | Mortgage or HELOC rates | `get_mortgage_rates` with `loan_type` (`30-year fixed` or `HELOC`). Pass `loan_amount` for conforming-versus-jumbo context. |
 | How much more a balance would earn | `calculate_deposit_earnings_difference` with `balance`. Let the two APYs default unless the user names them. |
+| A deposit account that meets several requirements at once (balance, holding period, state, no monthly fee, no direct deposit) | `compare_deposit_options` with `balance`, `product` (`savings`, `cd` or `all`), `horizon_months`, and the `require_*` flags the user actually stated. |
 
 ## How to answer
 
@@ -32,6 +33,9 @@ comparisons only.
    tool returns, nothing more.
 4. If `observed` is empty, say so and offer the `available_terms` or
    `available_loan_types` the result names instead of guessing.
+   For `compare_deposit_options`, report each requirement's status as the
+   tool gives it: a published match, a conflict, or unknown. Unknown is not a
+   match; tell the user which terms still need verification with the bank.
 5. Show the top three to five rows unless the user asks for the full list. For
    a long comparison, call with `max_results` and `include_provenance: false`.
    Do not paste the raw JSON.
