@@ -8,12 +8,14 @@ Open-source plugin package for RateZip's six-tool rate-research and payment-calc
 **Publisher:** Peklava LLC d/b/a RateZip  
 **Package license:** [MIT](LICENSE)
 
+The hosted endpoint also provides `get_rate_watch_report` for weekly comparisons. The [November 22, 2026 coverage update](docs/rate-watch-2026-11-22.md) lists which RateZip banking offers appeared in the public report and includes a reproducible request.
+
 ## Package and connection
 
 This repository's root is an [Agent Plugin](https://agent-plugins.org/):
 
 - [`plugin.json`](plugin.json) identifies the plugin and its license.
-- [`mcp.json`](mcp.json) connects to the hosted six-tool MCP endpoint.
+- [`mcp.json`](mcp.json) connects to the hosted MCP endpoint.
 - [`skills/ratezip-rates/SKILL.md`](skills/ratezip-rates/SKILL.md) explains tool selection, rate provenance, and calculation assumptions.
 
 Use the repository root in clients that support Agent Plugins. [Cursor documents support for this format](https://cursor.com/docs/reference/plugins). In a client that accepts a remote MCP connector, enter the endpoint above and select Streamable HTTP with no authentication. No local server, install script, executable hook, or credential is bundled.
