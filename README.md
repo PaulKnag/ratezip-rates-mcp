@@ -8,7 +8,7 @@ Open-source plugin package for RateZip's six-tool rate-research and payment-calc
 **Publisher:** Peklava LLC d/b/a RateZip  
 **Package license:** [MIT](LICENSE)
 
-The hosted endpoint also provides `get_rate_watch_report` for weekly comparisons. The [November 22, 2026 coverage update](docs/rate-watch-2026-11-22.md) lists which RateZip banking offers appeared in the public report and includes a reproducible request.
+The hosted endpoint also provides `get_rate_watch_report` for weekly comparisons. The [November 22, 2026 coverage update](docs/rate-watch-2026-11-22.md) lists the observed rates, their freshness and a reproducible request.
 
 ## Package and connection
 
