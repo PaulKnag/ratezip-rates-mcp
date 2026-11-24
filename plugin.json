@@ -1,8 +1,8 @@
 {
   "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
   "name": "ratezip-rates",
-  "version": "1.1.0",
-  "description": "Six tools for source-attributed US savings, CD and mortgage rate research, deposit comparisons, and hypothetical home equity loan or HELOC payment calculations.",
+  "version": "1.2.0",
+  "description": "Ten read-only tools for source-attributed US savings, CD, mortgage and HELOC rate research, weekly deposit rate watch comparisons, home equity payment illustrations, and auto insurance state benchmarks, carrier standing lookups, and quote comparisons.",
   "author": {
     "name": "Peklava LLC (RateZip)",
     "url": "https://www.ratezip.com"
@@ -10,5 +10,5 @@
   "homepage": "https://www.ratezip.com/agents",
   "repository": "https://github.com/PaulKnag/ratezip-rates-mcp",
   "license": "MIT",
-  "keywords": ["ratezip", "grok", "mcp", "savings", "cd", "mortgage", "heloc"]
+  "keywords": ["ratezip", "grok", "mcp", "savings", "cd", "mortgage", "heloc", "auto-insurance"]
 }
